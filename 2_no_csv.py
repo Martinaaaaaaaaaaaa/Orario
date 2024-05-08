@@ -32,7 +32,7 @@ for elem in orario_stampa: #loop stampa
         print(elem[x].strip(), ' ', end = '')
     else :
         print(elem[x+1])
-    
+    #aa
 
 #print ore totali
 print(f'ore totali di {in_docente}: {orario[3]}')

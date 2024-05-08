@@ -15,8 +15,6 @@ def orario_docente(docente):
                 if elem != '  ':
                     cont += 1
         continue
-        else:
-            continue
     file.close() #chiusura file
     return campi, ore, riga, cont
 
@@ -28,11 +26,13 @@ orario = orario_docente(in_docente)
 
 #ho un problema con il print dell'orario
 
-orario_stampa = orario[0],orario[1],orario[2] #non prendo in considerazione le ore totali
-print(f"le ore totali del docente {in_docente} sono {orario[3]}")
+orario_stampa = orario #non prendo in considerazione le ore totali
 
-
-    
+for parte in orario: #loop stampa
+    if parte is orario[3]:
+        continue
+    else:
+        print(parte)
 
 #print ore totali
 print(f'ore totali di {in_docente}: {orario[3]}')

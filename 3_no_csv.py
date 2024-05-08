@@ -11,7 +11,7 @@ def disposizione_docente(docente):
         if docente in row: #prende in considerazione solo la riga che contiene il nome del docente
             cont = 0 #contatore per ore a disposizione
             for ora in row:
-                if 'D' in ora: #evita di prendere in considerazione le cassi che hanno D dentro mettendo uno spazio davanti
+                if ora == 'D': #evita di prendere in considerazione le cassi che hanno D dentro mettendo uno spazio davanti
                     cont += 1
             disposizione = [docente,cont]  #lista con nome docente e ore a disposizione
             break #evita che vengano prese in considerazione altre righe inutilmente

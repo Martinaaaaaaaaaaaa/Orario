@@ -5,10 +5,13 @@ def docenti_lezione(ora,giorno):
     file = open('OrarioTabellaGlobale.csv','r') #apertura file in modalità lettura
     campi = next(file)
     ore = next(file)
+    elenco = []
     for row in file:
         row = row.split(',')
-        nome = row.pop(0)
-        
+        nome_docente = row.pop(0)
+        posizione
+        if cell != ' ':
+            elenco.append(nome_docente)
     file.close() #chiusura file
     return elenco
 

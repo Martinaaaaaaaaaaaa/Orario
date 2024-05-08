@@ -2,14 +2,15 @@
 
 #funzione
 def docenti_lezione(ora,giorno):
+    giorni = ('spazio','Lu','Ma','Me','Gi','Ve',)
     file = open('OrarioTabellaGlobale.csv','r') #apertura file in modalità lettura
     campi = next(file)
     ore = next(file)
     elenco = []
+    posizione = 8*posizioneGiorno
     for row in file:
         row = row.split(',')
         nome_docente = row.pop(0)
-        posizione
         if cell != ' ':
             elenco.append(nome_docente)
     file.close() #chiusura file

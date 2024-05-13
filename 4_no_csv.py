@@ -11,14 +11,15 @@ def docenti_lezione(ora,giorno):
         numero_iniziale = 5*giorni.index(giorno)
     else:
         print('Errore')
-    cell = numero_iniziale + ora -1 #-1 per il fatto che la numerazione di python nelle liste parte da 0
-    for row in file:
+    cell = numero_iniziale + ora #posizione dell'elemento da scansionare
+    for row in file: #scansione
         row = row.split(',')
-        nome_docente = row.pop(0)
-        if row[cell] != '  ':
-            elenco.append(nome_docente)
-        else:
+        
+        if  '  ' in row[cell]: #se la cella è vuota il docente non ha lezione
             continue
+        else:
+            nome_docente = row.pop(0)
+            elenco.append(nome_docente)
     file.close() #chiusura file
     return elenco
 

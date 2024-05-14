@@ -1,5 +1,4 @@
 #orario di un determinato docente e numero totale delle ore del docente
-import csv #import libreria csv
 
 #funzione
 def disposizione_docente(docente):
@@ -20,7 +19,7 @@ def disposizione_docente(docente):
 
 while True: #loop infinito
     #input utente
-    in_docente = input('Inserire il docente [tutto in maiuscolo]: ') 
+    in_docente = input('Inserire il docente desiderato: ').upper()
 
     #chiamata funzione
     disp = disposizione_docente(in_docente)

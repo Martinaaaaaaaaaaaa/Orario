@@ -19,7 +19,7 @@ def orario_docente(docente):
     return campi, ore, riga, cont
 
 #input utente
-in_docente = 'ADAMOLI PAOLO' #input('Inserire il docente [tutto in maiuscolo]: ') 
+in_docente = input('Inserire il docente desiderato: ').upper()
 
 #chiamata funzione
 orario = orario_docente(in_docente)

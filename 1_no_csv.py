@@ -1,5 +1,4 @@
 #elenco docenti di una data classe
-import pydoc
 
 #funzione
 def elenco_docenti(classe):

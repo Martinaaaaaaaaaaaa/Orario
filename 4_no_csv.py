@@ -28,7 +28,7 @@ def docenti_lezione(ora,giorno):
 while True: #loop infinito
     #input utente
     in_ora = int(input('Inserire ora scelta: '))
-    in_giorno = input('Inserire prime 3 lettere del giorno scelto in minuscolo: ')
+    in_giorno = input('Inserire le prime 3 lettere del giorno scelto: ').lower()
     
     #chiamata funzione
     docenti = docenti_lezione(in_ora, in_giorno)

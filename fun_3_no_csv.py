@@ -16,14 +16,3 @@ def disposizione_docente(docente):
             break #evita che vengano prese in considerazione altre righe inutilmente
     file.close() #chiusura file
     return disposizione
-
-while True: #loop infinito
-    #input utente
-    in_docente = input('Inserire il docente desiderato: ').upper()
-
-    #chiamata funzione
-    disp = disposizione_docente(in_docente)
-
-    #stampa risultato
-    print(disp[0] + "\nOre a disposizione: " + str(disp[1]) )
-

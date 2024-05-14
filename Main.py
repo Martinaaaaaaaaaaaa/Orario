@@ -13,7 +13,7 @@ while (x!="s" and x!="S" and x!="n" and x!="N"):
     x=input("Desidera tornare al menu? [s/n]: ")
 #ciclo per accedere al menu
 while (x=="s" or x=="S"):
-    print(f"\nMENU \nDigitare 0 per uscire dal menu \nDigitare 1 per accedere alla funzione {funzioni[0]} \nDigitare 2 per accedere alla funzione {funzioni[1]} \nDigitare 3 per accedere alla funzione {funzioni[2]} \nDigitare 4 per accedere alla funzione {funzioni[3]}")
+    print(f"\nMENU \nDigitare 0 per uscire dal menu \nDigitare 1 per accedere alla funzione elenco_docenti \nDigitare 2 per accedere alla funzione orario_docente \nDigitare 3 per accedere alla funzione disposizione_docente \nDigitare 4 per accedere alla funzione docenti_lezione")
     #input per scegliere una funzione del menu 
     a = int(input(">> "))
     #condizione per uscire dal menu
@@ -21,10 +21,10 @@ while (x=="s" or x=="S"):
         print("Arrivederci :P.")
         break
     #condizione per funzioni non esistenti
-    elif (a>(len(funzioni)-1)):
+    elif (a>len(funzioni)):
         print("Funzione non esistente.")
     #condizione per entrare nel modulo menu e nella funzione main
-    elif (a == "1"):
+    elif (a == 1):
         #input utente
         in_classe = input('Inserire la classe : ').upper()
 
@@ -36,7 +36,7 @@ while (x=="s" or x=="S"):
         for elem in docenti:
             print(elem)
 
-    elif (a == "2"):
+    elif (a == 2):
         #input utente
         in_docente = input('Inserire il docente desiderato: ').upper()
 
@@ -53,7 +53,7 @@ while (x=="s" or x=="S"):
         #print ore totali
         print(f'ore totali di {in_docente}: {orario[3]}')
         
-    elif (a == "3"):
+    elif (a == 3):
         #input utente
         in_docente = input('Inserire il docente desiderato: ').upper()
 
@@ -63,7 +63,7 @@ while (x=="s" or x=="S"):
         #stampa risultato
         print(disp[0] + "\nOre a disposizione: " + str(disp[1]) )
 
-    elif (a == "4"):
+    elif (a == 4):
         #input utente
         in_ora = int(input('Inserire ora scelta: '))
         in_giorno = input('Inserire le prime 3 lettere del giorno scelto: ').lower()

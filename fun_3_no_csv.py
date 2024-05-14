@@ -1,7 +1,15 @@
-#orario di un determinato docente e numero totale delle ore del docente
-
 #funzione
 def disposizione_docente(docente):
+    '''
+    Ritorna il numero totale di ore di disposizione del docente dato.
+
+
+    Args:
+        docente (string): docente cercato dall'utente
+        
+    Returns:
+        disposizione (integer): conteggio ore disposizione del docente 
+    '''
     file = open('OrarioTabellaGlobale.csv','r') #apertura file in modalità lettura
     #campi e ore vengono tirati fuori come liste così da non essere incluse nel ciclo di ricerca
     campi = next(file)

@@ -1,7 +1,17 @@
-#elenco docenti di una data classe
-
 #funzione
 def docenti_lezione(ora,giorno):
+    '''
+    Ritorna l'elenco dei docenti attivi l'ora e il giorno dati dall'utente.
+
+
+    Args:
+        ora (integer): ora data dall'utente (da 1 a 8)
+        giorno (string): prime 3 lettere del giorno dato dall'utente
+        
+    Returns:
+        elenco (list): lista nomi docenti che hanno lezione il dato giorno alla data ora
+    '''
+
     giorni = ('lun','mar','mer','gio','ven')
     file = open('OrarioTabellaGlobale.csv','r') #apertura file in modalità lettura
     campi = next(file)

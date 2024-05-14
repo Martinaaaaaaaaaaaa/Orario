@@ -1,15 +1,13 @@
-#elenco docenti di una data classe
-
 #funzione
 def elenco_docenti(classe):
     '''
-Ritorna l'elenco dei docenti di una classe data.
+    Ritorna l'elenco dei docenti di una classe data.
 
-Args:
-    classe (string): classe data dall'utente
-    
-Returns:
-    elenco : elenco docenti della classe
+    Args:
+        classe (string): classe data dall'utente
+        
+    Returns:
+        elenco : elenco docenti della classe
     '''
     file = open('OrarioTabellaGlobale.csv','r') #apertura file in modalità lettura
     #campi e ore vengono tirati fuori come liste così da non essere incluse nel ciclo di ricerca

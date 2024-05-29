@@ -16,3 +16,5 @@ Se si vuole invece accedere alla documentazione delle funzioni bisogna:
 2.  in Docs, aprire la cartella _build
 3.  in _build, aprire la cartella html
 4.  aprire il file con estensione .html 
+
+![cerca](https://github.com/Martinaaaaaaaaaaaa/Orario/blob/main/funzionamento/cerca.PNG)

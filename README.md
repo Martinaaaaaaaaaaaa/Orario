@@ -4,6 +4,7 @@ Progetto che permette all'utente di ricavare a scelta dal file OrarioTabellaGlob
 Questo progetto include:
 * una cartella oggetti, dove sono presenti i moduli contententi le 4 funzioni implementate e il modulo Main per eseguirle
 * una cartella Docs che contiene la documentazione delle funzioni presenti nei moduli
+* gli screenshot della documentazione funzionante 
 
 ## Utilizzo
 Per utilizzare questo programma è necessario:
